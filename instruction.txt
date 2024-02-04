@@ -1,0 +1,11 @@
+1. unzip the file and add to final_project folder to catkin_ws/src
+2. cd inside the folder where [install.bash] is located
+3. Set it to an executable file with > chmod+xinstall.bas
+4. Run it with > ./install.bas
+5. Edit [.bashrc] to point to the path of the models folder.'
+   ex:  exportGAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/zeid/catkin_ws/src/final_project/models
+6. catkin_build
+7. source devel/setup.bash
+8. roslaunch final_project multiple_robots.launch
+   This command will start Gazebo (see Figure 1) and RViz, will set parameters on the Parameter Server, spawn robots, and do topic remappings.
+9. roslaunch/rosrun final_project launch_file/executable
